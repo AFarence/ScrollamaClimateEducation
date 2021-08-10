@@ -21,7 +21,7 @@ let footerDiv =
   let divChapter0 = 
   "<h3>Rising Tides</h3>" +
   "<p>The Bloomsburg Fairgrounds have seen increasingly bad flooding over the past several decades</p>" +
-  "<img src='images/floodLevels.png'>"
+  "<img src='images/floodLevels.png'>" +
   "<p class='imageCredit'>Courtesy Photo</p>";
 
 
@@ -35,26 +35,28 @@ let divChapter2 =
   "<p>Income inequality certainly played a role in the uneven distribution of subway usage. By overlaying median household income and change in subway entries it becomes clear that those stations with less change are located in low-income areas, specially in the Bronx and outer Queens and Brooklyn.</p>";
 
 let divChapter3 =
-  "<h3>The epicenter of the outbreak</h3>" +
-  '<img src="images/Chapter_3_Image.jpg">' +
-  '<p class="imageCredit"><a href="https://www.nytimes.com/2020/04/09/nyregion/coronavirus-queens-corona-jackson-heights-elmhurst.html">The New York Times</a></p>' +
-  "<p>Elmhurst Hospital Center has been identified as one of the hospitals most overwhelmed by the number of patients with COVID-19 it has received. Located in a low-middle-income area of the city, with a median household income of around $50,000, the hospital serves one of the most diverse and immigrant dense areas of the city. The three subway stations around the hospital have all seen relatively small change in their usage compare to the rest of the city.</p>";
+  "<h3>Keeping Score</h3>" +
+  "<p>Some states, like Wyoming and New York, have improved upon the climate change standards presented by the NGSS. But others such as Texas and Pennsylvania “treat NGSS noticeably worse,” said Branch. “Those [states] have some of the worst treatments for climate change.”</p>" +
+  "<p>The report evaluated how climate change is addressed in the NGSS standards adopted by each state, and in the science standards of those who didn’t. Researchers assigned each state a score based on the inclusion of four principles: climate change is real; it’s caused by human activity; it’s affecting nature and society and it's possible to mitigate the effects.</p>"  +
+  "<p>“The bigger problem, obviously, in a lot of states, is that they just really don't talk about climate change much at all. Or if they do, they cast doubt on it,” said Dan Quinn, communications strategist at the Texas Freedom Network.</p>" +
+  "<p>Some of the most populous states earned a D+ or lower. Six of these states, including Pennsylvania and Texas, received a failing grade. Researchers found that even some states who used the framework downplayed the severity of climate change as outlined in the NGSS and scored a C+ or lower. Of these, Georgia, Alabama and South Carolina received an F.</p>";
 
 let divChapter4 =
-  "<h3 style='max-width:600px; margin-left:auto; margin-right:auto'>Overall collapse of subway usage</h3>" +
-  '<div style="max-width:1200px; margin-left:auto; margin-right:auto"><img src="images/WeekdaySubway.svg"></div>' +
-  "<p class='imageCredit' style='max-width:600px; margin-left:auto; margin-right:auto'><a href='https://qri.cloud/nyc-transit-data/turnstile_daily_counts_2020'>NYC Subway Turnstile Counts - 2020 (Qri)</a></p>" +
-  "<p style='max-width:600px; margin-left:auto; margin-right:auto'>As can be seen in the chart above, subway usage collapsed abruptly right after the first COVID-19 case was documented in the city. It was in fact the declaration of a state of emergency, on March 7, 2020, that precipitated this near total drop in subway ridership.</p>" +
-  "<p style='max-width:600px; margin-left:auto; margin-right:auto'>After a few weeks of the declaration of state of emergency, subway usage in the city reached its lowest point, almost 90% less than the same time period the year before. Since then, the number of people that use the subway has remained drastically low. Even after the city began its re-opening scheme on June 8, 2020, subway usage was still more than 70% below 2019 levels.</p>" +
-  '<div style="max-width:600px; margin-left:auto; margin-right:auto"><iframe title="vimeo-player" src="https://player.vimeo.com/video/529512696" width="600" height="277.5" frameborder="0" allowfullscreen></iframe></div>' +
-  "<p style='max-width:600px; margin-left:auto; margin-right:auto'>This difference, however, varies across the city, with some parts of it seeing a much steeper decline and others witnessing a stronger recovery. Nevertheless, even a year after the pandemic first hit New York City, the number of daily subway commuters remains below 2019 levels.</p>" +
-  "<p style='max-width:600px; margin-left:auto; margin-right:auto'>That being said, other transportation networks have fared differently. For example, after a similar decline right after the state of emergency was declared, Citibike has seen its number of users reach and even surpass 2019 levels. City buses, on the other hand, also remain underutilized compared to their usage pre-pandemic.</p>";
+  "<h3 style='max-width:600px; margin-left:auto; margin-right:auto'>Lack of national guidance</h3>" +
+  "<p style='max-width:600px; margin-left:auto; margin-right:auto'>In the United States, there is no national policy that mandates schools to teach climate change. Instead, individual states decide whether to include climate change in their science standards, which define what students should know by the end of each grade level. Only 29 states and D.C. require teaching man-made climate change, while 15 others do mention climate change but don’t specify its human cause, according to a 2020 The Aspen Institute report.</p>" +
+  "<p style='max-width:600px; margin-left:auto; margin-right:auto'>“Unlike most of the developed world, it doesn't make any sense to talk about national education policy on climate education, because there isn't one,” said Glen Branch, the deputy director of the National Center for Science Education. “[Standards] vary greatly in their coverage, the extent of their coverage and the quality of their coverage of climate change.”</p>" +
+  "<p style='max-width:600px; margin-left:auto; margin-right:auto'>In April 2013, teachers, scientists and researchers partnered with 26 states to develop the Next Generation Science Standards (NGSS), a new set of K-12 science standards that encourages critical thinking activities and connects scientific concepts to real-life situations. These introduce climate change-related topics as early as kindergarten and explicitly address the human effect on global warming at the middle and high school level.</p>" +
+  "<p style='max-width:600px; margin-left:auto; margin-right:auto'>Twenty states and D.C. have adopted the NGSS, while another 24 have written their own standards based on them. But in 6 states, which encompass nearly 30% of public school students, science standards do not follow the NGSS’s framework, according to a report from the National Center for Science Education and the Texas Freedom Network Education Fund, published in October 2020.</p>";  
 
-let divChapter5 =
-  "<h3>The South Bronx, as Always</h3>" +
-  '<img src="images/Chapter_4_Image.jpg">' +
-  '<p class="imageCredit"><a href="https://www.nytimes.com/2020/04/09/nyregion/coronavirus-queens-corona-jackson-heights-elmhurst.html">The New York Times</a></p>' +
-  "<p>The South Bronx, perennially marred in social injustice, has also been hard hit during the current COVID-19 outbreak. The area's three main neighborhoods, Mott Haven, Melrose and Port Morris are mostly home to low-income families that have been forced to continue going to work, risking their health and that of their loved ones. Similarly to Jackson Heights in Queens, the areas subway stations have seen a smaller decrease in use than the rest of the city. Median household income in this area oscillates between $15,000 and $30,000.</p>";
+  let divChapter5 =
+  "<h3>Making the grade</h3>" +
+  '<p>“There’s really great progress being made, but in patches across the US, and then you still have states who are not even talking about it and denying the human causes of climate change,” said Christina Kwauk, a social scientist and climate change education at the Brookings Institute. “It\'s a huge spectrum.”</p>' +
+  "<p>But what happens in the classroom doesn’t totally depend on the state’s standards. Standards outline the state's expectations for teaching and learning, but it is the curriculum that determines how the content is being taught, and that varies according to the district.</p>" +
+  '<p>“Even though there are [NGSS] standards in place in some states, it\'s not always clear that those are standards that are really being addressed in a meaningful way in the classroom,” said Sarah Bodor, director of policy and affiliate relations at North American Association for Environmental Education.</p>' +
+  "<p>While districts determine the curriculum, the standards guide statewide testing, which evaluates students’ performance at each grade level. In states that require teaching climate change, the standardized assessments will test students’ knowledge on the topic. But for those that don’t address it, there is no way of measuring how much those students know about the topic.</p>" +
+  '<p>“Learning outcomes are essential for climate leadership, for climate engagement, civic participation, things that will make a difference, and help us hold the education system accountable to making that difference”, said Kwauk. “We really need to focus on developing those indicators and those measurement frameworks.”</p>' +
+  '<p>But some teachers, like Vandenberg from Pennsylvania, who work in states that don’t require teaching climate change, believe it’s imperative to incorporate the topic into their classes.</p>' +
+  "<p>Vandenberg teaches elective courses on humans and the environment and environmental science, which include curriculum focused on climate change. But even in his general chemistry classes, his students get a “full dose of climate change,” and he dedicates a few lessons to the impact of fossil fuels on the environment.</p>";
 
 var config = {
   style: "mapbox://styles/afarence/ckry5zvgr20ya18pjibgaig7s",
@@ -109,18 +111,18 @@ var config = {
     },
     {
       id: "incomeUnderlay",
-      alignment: "left",
+      alignment: "full",
       hidden: false,
       title: "",
       image: "",
       description: "",
-      chapterDiv: divChapter2,
+      chapterDiv: divChapter4,
       location: {
-        center: [-74, 40.725],
-        zoom: 10,
+        center: [-95, 40.725],
+        zoom: 3.5,
         zoomSmall: 9,
-        pitch: 0,
-        bearing: 0,
+        pitch: 40,
+        bearing: -9,
       },
       mapAnimation: "flyTo",
       rotateAnimation: false,
@@ -141,19 +143,52 @@ var config = {
       ],
     },
     {
-      id: "elmhurstHospital",
-      alignment: "left",
+      id: "keepingScore",
+      alignment: "right",
+      hidden: true,
+      title: "",
+      image: "",
+      description: "",
+      chapterDiv: divChapter3,
+      location: {
+        center: [-95, 40.725],
+        zoom: 3.5,
+        zoomSmall: 14,
+        pitch: 40,
+        bearing: -9,
+      },
+      mapAnimation: "flyTo",
+      rotateAnimation: false,
+      callback: "",
+      onChapterEnter: [
+        {
+          layer: "medianIncome",
+          opacity: 0,
+          duration: 300,
+        },
+      ],
+      onChapterExit: [
+        {
+          layer: "medianIncome",
+          opacity: 0,
+          duration: 300,
+        },
+      ],
+    },
+    {
+      id: "keepingScore",
+      alignment: "right",
       hidden: false,
       title: "",
       image: "",
       description: "",
       chapterDiv: divChapter3,
       location: {
-        center: [-73.886201, 40.744566],
-        zoom: 16,
+        center: [-95, 22.725],
+        zoom: 2.5,
         zoomSmall: 14,
         pitch: 40,
-        bearing: -7,
+        bearing: -9,
       },
       mapAnimation: "flyTo",
       rotateAnimation: false,

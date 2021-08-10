@@ -56,7 +56,26 @@ let divChapter4 =
   "<p>While districts determine the curriculum, the standards guide statewide testing, which evaluates students’ performance at each grade level. In states that require teaching climate change, the standardized assessments will test students’ knowledge on the topic. But for those that don’t address it, there is no way of measuring how much those students know about the topic.</p>" +
   '<p>“Learning outcomes are essential for climate leadership, for climate engagement, civic participation, things that will make a difference, and help us hold the education system accountable to making that difference”, said Kwauk. “We really need to focus on developing those indicators and those measurement frameworks.”</p>' +
   '<p>But some teachers, like Vandenberg from Pennsylvania, who work in states that don’t require teaching climate change, believe it’s imperative to incorporate the topic into their classes.</p>' +
-  "<p>Vandenberg teaches elective courses on humans and the environment and environmental science, which include curriculum focused on climate change. But even in his general chemistry classes, his students get a “full dose of climate change,” and he dedicates a few lessons to the impact of fossil fuels on the environment.</p>";
+  "<p>Vandenberg teaches elective courses on humans and the environment and environmental science, which include curriculum focused on climate change. But even in his general chemistry classes, his students get a “full dose of climate change,” and he dedicates a few lessons to the impact of fossil fuels on the environment.</p>" +
+  '<p>Ninth grade biology teacher, Jackie Falcone, also teaches the human impact of climate change. In Pennsylvania, biology classes follow the content included in the Biology Keystone Exam, an end-of-the-year assessment which informs the material Falcone includes in her lessons. </p>' +
+  '<p>Though the content in the exam doesn’t specifically address human-caused climate change, Falcone chooses to emphasize its influence on the topics she covers in class. </p>' +
+  '<p>“I like to make them understand that all of this is connected,” Falcone said. “Even just talking about severe storms, and the tornadoes that have been happening more frequently around here, like all of that is very tangible for the students.”</p>' +
+  '<p>But not all teachers at Springfield promote instruction on the human impact of climate change. Falcone has received pushback from a social studies teacher at the school, and she said she occasionally “picks on this other teacher” as part of a “running joke.” In the past, she’s also detected some doubt from students.</p>' +
+  '<p>“Some of the students have definitely asked questions where you can understand that they\'re coming from a place of preconceived notions of climate change, and it being political,” Falcone said.</p>' +
+  '<p>But climate deniers or skeptics are not the majority. At least 78% of Pennsylvania residents believe schools should teach about the causes, consequences, and potential solutions to global warming, according to Yale Climate Opinion Maps published last year.</p>';
+
+  let divChapter6 =
+  "<h3>Public Opinion</h3>" +
+  '<p>Ninth grade biology teacher, Jackie Falcone, also teaches the human impact of climate change. In Pennsylvania, biology classes follow the content included in the Biology Keystone Exam, an end-of-the-year assessment which informs the material Falcone includes in her lessons. </p>' +
+  '<p>Though the content in the exam doesn’t specifically address human-caused climate change, Falcone chooses to emphasize its influence on the topics she covers in class. </p>' +
+  '<p>“I like to make them understand that all of this is connected,” Falcone said. “Even just talking about severe storms, and the tornadoes that have been happening more frequently around here, like all of that is very tangible for the students.”</p>' +
+  '<p>But not all teachers at Springfield promote instruction on the human impact of climate change. Falcone has received pushback from a social studies teacher at the school, and she said she occasionally “picks on this other teacher” as part of a “running joke.” In the past, she’s also detected some doubt from students.</p>' +
+  '<p>“Some of the students have definitely asked questions where you can understand that they\'re coming from a place of preconceived notions of climate change, and it being political,” Falcone said.</p>' +
+  '<p>But climate deniers or skeptics are not the majority. At least 78% of Pennsylvania residents believe schools should teach about the causes, consequences, and potential solutions to global warming, according to Yale Climate Opinion Maps published last year.</p>';
+
+  let divChapter7 =
+  '<p>Like Vandenberg and Falcone note, communities in Pennsylvania are already experiencing the effects of climate change, and they’re expected to worsen as temperatures rise. Worst case climate projections show Pennsylvania will warm by almost 10 degrees if no actions are taken to mitigate climate change, according to the Representative Concentration Pathway (RCP) 8.5 model.</p>'
+
 
 var config = {
   style: "mapbox://styles/afarence/ckry5zvgr20ya18pjibgaig7s",
@@ -249,6 +268,72 @@ var config = {
       image: "",
       description: "",
       chapterDiv: divChapter5,
+      location: {
+        center: [-95, 42.725],
+        zoom: 3.5,
+        zoomSmall: 14,
+        pitch: 40,
+        bearing: -9,
+      },
+      mapAnimation: "flyTo",
+      rotateAnimation: false,
+      callback: "",
+      onChapterEnter: [
+        {
+          layer: "medianIncome",
+          opacity: 1,
+          duration: 300,
+        },
+      ],
+      onChapterExit: [
+        {
+          layer: "medianIncome",
+          opacity: 0,
+          duration: 300,
+        },
+      ],
+    },
+    {
+      id: "publicOpinion",
+      alignment: "center",
+      hidden: false,
+      title: "",
+      image: "",
+      description: "",
+      chapterDiv: divChapter6,
+      location: {
+        center: [-95, 42.725],
+        zoom: 3.5,
+        zoomSmall: 14,
+        pitch: 40,
+        bearing: -9,
+      },
+      mapAnimation: "flyTo",
+      rotateAnimation: false,
+      callback: "",
+      onChapterEnter: [
+        {
+          layer: "medianIncome",
+          opacity: 1,
+          duration: 300,
+        },
+      ],
+      onChapterExit: [
+        {
+          layer: "medianIncome",
+          opacity: 0,
+          duration: 300,
+        },
+      ],
+    },
+    {
+      id: "publicOpinion",
+      alignment: "center",
+      hidden: false,
+      title: "",
+      image: "",
+      description: "",
+      chapterDiv: divChapter7,
       location: {
         center: [-95, 42.725],
         zoom: 3.5,

@@ -242,8 +242,8 @@ var config = {
       ],
     },
     {
-      id: "southBronx",
-      alignment: "right",
+      id: "makingthegrade",
+      alignment: "center",
       hidden: false,
       title: "",
       image: "",

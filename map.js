@@ -260,7 +260,7 @@ for (var i = 0; i < layers.length; i++) {
     //"us_states_education_outline"
     );
   });
-  
+
   // Create the popup
   map.on('click', 'us_states_education', function (e) {
     var stateName = e.features[0].properties.NAME;
@@ -274,7 +274,7 @@ for (var i = 0; i < layers.length; i++) {
         + '<i><h4>' + ngss +'</h4></i>')
         .addTo(map);
   });
-  
+
   // Change the cursor to a pointer when the mouse is over the us_states_elections layer.
   map.on('mouseenter', 'us_states_education', function () {
     map.getCanvas().style.cursor = 'pointer';
@@ -295,23 +295,54 @@ for (var i = 0; i < layers.length; i++) {
       "fill-color": "gold",
     },
   },
+    "road-label-simple"
   );
   map.addLayer({
-    id:'schooldata',
-    type:'fill',
+    id: "us_states_education",
+    type: "fill",
     source: {
-        type:'geojson',
-        data:'data/dataframe.geojson'
+      type: "geojson",
+      data: "data/stateData.geojson",
     },
-    paint:{
-        'fill-color':'#0276FD',
-        'fill-opacity': ['interpolate',['linear'],['get','B14001_001E'],
-1000,0.25,
-2000000,0.95]
+    paint: {
+      "fill-color": [
+        "match",
+        ["get", "Type_of_teaching"],
+        "Requires teaching human-caused climate change", "#fc8d59",
+        "Climate change only included in optional high school classes", "#ffffbf",
+        "Currently lacks any mention of climate change in their state science standards", "#91bfdb",
+        "Requires teaching climate change but not as predominantly human caused", "#91cf60",
+        "#ffffff",
+      ],
+      "fill-outline-color": "#000000",
+      },
+    },
+    "us_states_education_outline"
+    );
+  });
 
-    }
-},"land"
-);
+  // Create the popup
+  map.on('click', 'us_states_education', function (e) {
+    var stateName = e.features[0].properties.NAME;
+    var education = e.features[0].properties.Type_of_teaching;
+    var ngss = e.features[0].properties.NGSS;
+    stateName = stateName.toUpperCase();
+    new mapboxgl.Popup()
+        .setLngLat(e.lngLat)
+        .setHTML('<h4><b>'+stateName+'</b></h4>'
+        + '<h4>' + education +'</h4>'
+        + '<i><h4>' + ngss +'</h4></i>')
+        .addTo(map);
+  });
+
+  // Change the cursor to a pointer when the mouse is over the us_states_elections layer.
+  map.on('mouseenter', 'us_states_education', function () {
+    map.getCanvas().style.cursor = 'pointer';
+  });
+  // Change it back to a pointer when it leaves.
+  map.on('mouseleave', 'us_states_education', function () {
+      map.getCanvas().style.cursor = '';
+  });
   map.addLayer(
     {
       id: "us_states_education",
@@ -359,7 +390,7 @@ for (var i = 0; i < layers.length; i++) {
               25, '#46679E',
               30, '#5F7FB0',
               35, '#7999C1',
-              40, '#98B2D3', 
+              40, '#98B2D3',
               45, '#B9CFE5',
               50, '#DFEBF7',
               55, '#FEEB9E',

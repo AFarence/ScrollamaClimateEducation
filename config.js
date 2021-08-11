@@ -9,14 +9,14 @@ let bylineDiv = "<h4>By Sheridan Wall, Bianca Pallaro, Annie Njanja, and Adam Fa
 
 let descriptionDiv =
 "<p>Dan Vandenberg showed his home solar electric system through the lens of his iphone. It was in the middle of the pandemic, and he was teaching high school science students the benefits of renewable energy through Zoom.</p>" +
-'<p>He has a master’s degree in environmental science and emphasizes climate change, and its human impact, in all of his science classes since he started teaching at Springfield High School 35 years ago.</p>' 
+'<p>He has a master’s degree in environmental science and emphasizes climate change, and its human impact, in all of his science classes since he started teaching at Springfield High School 35 years ago.</p>'
 //'<p>While Vandenberg insists on teaching climate change, even in his chemistry classes, there is currently no legal framework in Pennsylvania that mandates he do so. Pennsylvania is the only state in the country that currently lacks any mention of climate change in its required learning objectives.'
 
 let footerDiv =
   '<p>This story is based on multiple interviews by current and former teachers, climate research groups, government officials, and the following datasets: INCLUDE DATASET LIST HERE' +
   '<p><a href="https://www.mapbox.com/about/maps/" target="_blank">© Mapbox</a> | <a href="http://www.openstreetmap.org/about/" target="_blank">© OpenStreetMap</a>';
 
-let divChapter0 = 
+let divChapter0 =
 "<h3>Rising Tides</h3>" +
 "<p>To teach it, he uses a photo taken by a friend on the Bloomsburg Fairgrounds. The fairgrounds are a few miles south of where he grew up, and the building shows high water marks from four different floods in the area. The most recent line almost touches the building’s roof. </p>" +
 "<p>“I've grown up here in Pennsylvania. I moved here when I was in first grade. I know Pennsylvania. And I've seen the changes,” he said. “I tell the kids, ‘If you warm the atmosphere and you add more moisture, that water's going to come down eventually. And that's what you're seeing now in these floods.”</p>" +
@@ -24,7 +24,7 @@ let divChapter0 =
 "<p class='imageCredit'>Courtesy Photo</p>";
 
 
-let divChapter1 = 
+let divChapter1 =
 "<h3 style='max-width:600px; margin-left:auto; margin-right:auto'>Lack of Federal Guidance</h3>" +
 "<p style='max-width:600px; margin-left:auto; margin-right:auto'>While Vandenberg insists on teaching climate change, even in his chemistry classes, there is currently no legal framework in Pennsylvania that mandates he do so. Pennsylvania is the only state in the country that currently lacks any mention of climate change in its required learning objectives.</p>" +
 "<p style='max-width:600px; margin-left:auto; margin-right:auto'>In the United States, there is no national policy that mandates schools to teach climate change. Instead, individual states decide whether to include climate change in their science standards, which define what students should know by the end of each grade level. Only 29 states and D.C. require teaching man-made climate change, while 15 others do mention climate change but don’t specify its human cause, according to a 2020 The Aspen Institute report.</p>" +
@@ -46,8 +46,8 @@ let divChapter3 =
 '<p style="max-width:600px; margin-left:auto; margin-right:auto">“Even though there are [NGSS] standards in place in some states, it\'s not always clear that those are standards that are really being addressed in a meaningful way in the classroom,” said Sarah Bodor, director of policy and affiliate relations at North American Association for Environmental Education.</p>' +
 "<p style='max-width:600px; margin-left:auto; margin-right:auto'>While districts determine the curriculum, the standards guide statewide testing, which evaluates students’ performance at each grade level. In states that require teaching climate change, the standardized assessments will test students’ knowledge on the topic. But for those that don’t address it, there is no way of measuring how much those students know about the topic.</p>" +
 '<p style="max-width:600px; margin-left:auto; margin-right:auto">“Learning outcomes are essential for climate leadership, for climate engagement, civic participation, things that will make a difference, and help us hold the education system accountable to making that difference”, said Kwauk. “We really need to focus on developing those indicators and those measurement frameworks.”</p>'
-  
-let divChapter4 = 
+
+let divChapter4 =
 "<h3>Taking Matters into their own hands</h3>" +
 "<p>But some teachers, like Vandenberg from Pennsylvania, who work in states that don’t require teaching climate change, believe it’s imperative to incorporate the topic into their classes.</p>" +
 '<p>Vandenberg teaches elective courses on humans and the environment and environmental science, which include curriculum focused on climate change. But even in his general chemistry classes, his students get a “full dose of climate change,” and he dedicates a few lessons to the impact of fossil fuels on the environment.</p>' +
@@ -60,7 +60,7 @@ let divChapter4 =
 //   "<p style='max-width:600px; margin-left:auto; margin-right:auto'>In the United States, there is no national policy that mandates schools to teach climate change. Instead, individual states decide whether to include climate change in their science standards, which define what students should know by the end of each grade level. Only 29 states and D.C. require teaching man-made climate change, while 15 others do mention climate change but don’t specify its human cause, according to a 2020 The Aspen Institute report.</p>" +
 //   "<p style='max-width:600px; margin-left:auto; margin-right:auto'>“Unlike most of the developed world, it doesn't make any sense to talk about national education policy on climate education, because there isn't one,” said Glen Branch, the deputy director of the National Center for Science Education. “[Standards] vary greatly in their coverage, the extent of their coverage and the quality of their coverage of climate change.”</p>" +
 //   "<p style='max-width:600px; margin-left:auto; margin-right:auto'>In April 2013, teachers, scientists and researchers partnered with 26 states to develop the Next Generation Science Standards (NGSS), a new set of K-12 science standards that encourages critical thinking activities and connects scientific concepts to real-life situations. These introduce climate change-related topics as early as kindergarten and explicitly address the human effect on global warming at the middle and high school level.</p>" +
-//   "<p style='max-width:600px; margin-left:auto; margin-right:auto'>Twenty states and D.C. have adopted the NGSS, while another 24 have written their own standards based on them. But in 6 states, which encompass nearly 30% of public school students, science standards do not follow the NGSS’s framework, according to a report from the National Center for Science Education and the Texas Freedom Network Education Fund, published in October 2020.</p>";  
+//   "<p style='max-width:600px; margin-left:auto; margin-right:auto'>Twenty states and D.C. have adopted the NGSS, while another 24 have written their own standards based on them. But in 6 states, which encompass nearly 30% of public school students, science standards do not follow the NGSS’s framework, according to a report from the National Center for Science Education and the Texas Freedom Network Education Fund, published in October 2020.</p>";
 
 let divChapter5 =
 "<h3 style='max-width:600px; margin-left:auto; margin-right:auto'>Public Opinion</h3>" +

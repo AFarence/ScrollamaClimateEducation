@@ -120,14 +120,24 @@ var config = {
       callback: "",
       onChapterEnter: [
         {
-          layer: "overallMap",
-          opacity: 1,
+          layer: "us_states_education", // "overallMap"
+          opacity: 0,
+          duration: 300,
+        },
+        {
+          layer: "penn_opinion", // "overallMap"
+          opacity: 0,
           duration: 300,
         },
       ],
       onChapterExit: [
         {
-          layer: "overallMap",
+          layer: "us_states_education", // "overallMap"
+          opacity: 0,
+          duration: 300,
+        },
+        {
+          layer: "penn_opinion", // "overallMap"
           opacity: 0,
           duration: 300,
         },
@@ -151,14 +161,24 @@ var config = {
       onChapterEnter: [
         {
           layer: "us_states_education",
-          opacity: 1,
+          opacity: 0,
+          duration: 300,
+        },
+        {
+          layer: "penn_opinion",
+          opacity: 0,
           duration: 300,
         },
       ],
       onChapterExit: [
         {
           layer: "us_states_education",
-          opacity: 1,
+          opacity: 0,
+          duration: 300,
+        },
+        {
+          layer: "penn_opinion",
+          opacity: 0,
           duration: 300,
         },
       ],
@@ -183,15 +203,35 @@ var config = {
       callback: "",
       onChapterEnter: [
         {
+          layer: "us_states_education",
+          opacity: .6,
+          duration: 300,
+        },
+        {
           layer: "penn_opinion",
-          opacity: 1,
+          opacity: 0,
+          duration: 300,
+        },
+        {
+          layer: "bfg",
+          opacity: 0,
           duration: 300,
         },
       ],
       onChapterExit: [
         {
+          layer: "us_states_education",
+          opacity: .6,
+          duration: 300,
+        },
+        {
           layer: "penn_opinion",
-          opacity: 1,
+          opacity: 0,
+          duration: 300,
+        },
+        {
+          layer: "bfg",
+          opacity: 0,
           duration: 300,
         },
       ],
@@ -216,15 +256,35 @@ var config = {
       callback: "",
       onChapterEnter: [
         {
+          layer: "bfg",
+          opacity: 0,
+          duration: 300,
+        },
+        {
+          layer: "us_states_education", // overallMap
+          opacity: .6,
+          duration: 300,
+        },
+        {
           layer: "penn_opinion",
-          opacity: 1,
+          opacity: 0,
           duration: 300,
         },
       ],
       onChapterExit: [
         {
-          layer: "overallMap",
-          opacity: 1,
+          layer: "bfg",
+          opacity: 0,
+          duration: 300,
+        },
+        {
+          layer: "us_states_education", // overallMap
+          opacity: 0,
+          duration: 300,
+        },
+        {
+          layer: "penn_opinion",
+          opacity: .6,
           duration: 300,
         },
       ],
@@ -249,15 +309,25 @@ var config = {
       callback: "",
       onChapterEnter: [
         {
-          layer: "overallMap",
-          opacity: 1,
+          layer: "bfg",
+          opacity: 0,
+          duration: 300,
+        },
+        {
+          layer: "us_states_education", // overallMap
+          opacity: 0,
           duration: 300,
         },
       ],
       onChapterExit: [
         {
-          layer: "overallMap",
-          opacity: 1,
+          layer: "us_states_education", // overallMap
+          opacity: 0,
+          duration: 300,
+        },
+        {
+          layer: "bfg",
+          opacity: 0,
           duration: 300,
         },
       ],
@@ -283,14 +353,14 @@ var config = {
       onChapterEnter: [
         {
           layer: "overallMap",
-          opacity: 1,
+          opacity: .6,
           duration: 300,
         },
       ],
       onChapterExit: [
         {
           layer: "overallMap",
-          opacity: 1,
+          opacity: .6,
           duration: 300,
         },
       ],
@@ -323,7 +393,7 @@ var config = {
       onChapterExit: [
         {
           layer: "overallMap",
-          opacity: 1,
+          opacity: .6,
           duration: 300,
         },
       ],
@@ -349,14 +419,14 @@ var config = {
       onChapterEnter: [
         {
           layer: "schooldata",
-          opacity: 1,
+          opacity: .6,
           duration: 300,
         },
       ],
       onChapterExit: [
         {
           layer: "overallMap",
-          opacity: 1,
+          opacity: .6,
           duration: 300,
         },
       ],
@@ -382,14 +452,14 @@ var config = {
       onChapterEnter: [
         {
           layer: "overallMap",
-          opacity: 1,
+          opacity: .6,
           duration: 300,
         },
       ],
       onChapterExit: [
         {
           layer: "overallMap",
-          opacity: 1,
+          opacity: .6,
           duration: 300,
         },
       ],

@@ -228,21 +228,21 @@ for (var i = 0; i < layers.length; i++) {
       type: "line",
       source: {
         type: "geojson",
-        data: "data/stateData.geojson",
+        data: "./data/stateData.geojson",
       },
       paint: {
         "line-color": "#ffffff",
         "line-width": 0.7,
       },
     },
-    "land"
+    "waterway-shadow"
   );
   map.addLayer({
     id: "us_states_education",
     type: "fill",
     source: {
       type: "geojson",
-      data: "data/stateData.geojson",
+      data: "./data/stateData.geojson",
     },
     paint: {
       "fill-color": [
@@ -255,9 +255,8 @@ for (var i = 0; i < layers.length; i++) {
         "#ffffff",
       ],
       "fill-outline-color": "#000000",
-      },
-    },"waterway-label"
-    //"us_states_education_outline"
+    },
+    },"road-simple"
     );
   });
 
@@ -294,24 +293,24 @@ for (var i = 0; i < layers.length; i++) {
       "fill-opacity": .5,
       "fill-color": "gold",
     },
-  },
-  );
-  map.addLayer({
-    id:'schooldata',
-    type:'fill',
-    source: {
-        type:'geojson',
-        data:'data/dataframe.geojson'
-    },
-    paint:{
-        'fill-color':'#0276FD',
-        'fill-opacity': ['interpolate',['linear'],['get','B14001_001E'],
-1000,0.25,
-2000000,0.95]
+  }, "waterway-shadow");
 
-    }
-},"land"
-);
+//   map.addLayer({
+//     id:'schooldata',
+//     type:'fill',
+//     source: {
+//         type:'geojson',
+//         data:'data/dataframe.geojson'
+//     },
+//     paint:{
+//         'fill-color':'#0276FD',
+//         'fill-opacity': ['interpolate',['linear'],['get','B14001_001E'],
+// 1000,0.25,
+// 2000000,0.95]
+
+//     }
+// },"waterway-shadow" );
+
   map.addLayer(
     {
       id: "us_states_education",
@@ -337,9 +336,8 @@ for (var i = 0; i < layers.length; i++) {
         ],
         "fill-outline-color": "#000000",
       },
-    },
-    "land"
-  );
+    }, "waterway-shadow");
+
   map.addLayer({
     id: "penn_opinion",
     type: "fill",
@@ -348,6 +346,7 @@ for (var i = 0; i < layers.length; i++) {
       data: "data/pennOpCounties.geojson",
     },
     'paint': {
+      'fill-opacity': 0,
       'fill-color': [
       'interpolate',
       ['linear'],
@@ -375,7 +374,7 @@ for (var i = 0; i < layers.length; i++) {
 
           ],
   },
-},"land")
+},"waterway-shadow")
   //Pop-up code
   map.on('click', 'bfg', function (e) {
     new mapboxgl.Popup()

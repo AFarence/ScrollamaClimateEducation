@@ -196,6 +196,10 @@ scrolling to the chapters and move the map from one location to another
 while changing the zoom level, pitch and bearing */
 
 map.on("load", function () {
+  var layers = map.getStyle().layers;
+for (var i = 0; i < layers.length; i++) {
+    console.log(layers[i].id);
+}
   // Add 3d terrain if necessary
   if (config.use3dTerrain) {
     map.addSource("mapbox-dem", {
@@ -218,78 +222,167 @@ map.on("load", function () {
       },
     });
   }
-  map.addLayer(
-    {
-      id: "turnstileData",
-      type: "circle",
+  map.on("load", function () {
+    map.addLayer({
+      id: "us_states_education_outline",
+      type: "line",
       source: {
         type: "geojson",
-        data: "data/turnstileData.geojson",
+        data: "data/stateData.geojson",
       },
       paint: {
-        "circle-color": [
-          "interpolate",
-          ["linear"],
-          ["get", "ENTRIES_DIFF"],
-          -1,
-          "#ff4400",
-          -0.7,
-          "#ffba31",
-          -0.4,
-          "#ffffff",
-        ],
-        "circle-stroke-color": "#4d4d4d",
-        "circle-stroke-width": 0.5,
-        "circle-radius": [
-          "interpolate",
-          ["exponential", 2],
-          ["zoom"],
-          10,
-          ["interpolate", ["linear"], ["get", "ENTRIES_DIFF"], -1, 10, -0.4, 1],
-          15,
-          [
-            "interpolate",
-            ["linear"],
-            ["get", "ENTRIES_DIFF"],
-            -1,
-            25,
-            -0.4,
-            12,
-          ],
-        ],
+        "line-color": "#ffffff",
+        "line-width": 0.7,
       },
     },
-    "road-label-simple"
+    "land"
   );
+  map.addLayer({
+    id: "us_states_education",
+    type: "fill",
+    source: {
+      type: "geojson",
+      data: "data/stateData.geojson",
+    },
+    paint: {
+      "fill-color": [
+        "match",
+        ["get", "Type_of_teaching"],
+        "Requires teaching human-caused climate change", "#fc8d59",
+        "Climate change only included in optional high school classes", "#ffffbf",
+        "Currently lacks any mention of climate change in their state science standards", "#91bfdb",
+        "Requires teaching climate change but not as predominantly human caused", "#91cf60",
+        "#ffffff",
+      ],
+      "fill-outline-color": "#000000",
+      },
+    },"waterway-label"
+    //"us_states_education_outline"
+    );
+  });
+  
+  // Create the popup
+  map.on('click', 'us_states_education', function (e) {
+    var stateName = e.features[0].properties.NAME;
+    var education = e.features[0].properties.Type_of_teaching;
+    var ngss = e.features[0].properties.NGSS;
+    stateName = stateName.toUpperCase();
+    new mapboxgl.Popup()
+        .setLngLat(e.lngLat)
+        .setHTML('<h4><b>'+stateName+'</b></h4>'
+        + '<h4>' + education +'</h4>'
+        + '<i><h4>' + ngss +'</h4></i>')
+        .addTo(map);
+  });
+  
+  // Change the cursor to a pointer when the mouse is over the us_states_elections layer.
+  map.on('mouseenter', 'us_states_education', function () {
+    map.getCanvas().style.cursor = 'pointer';
+  });
+  // Change it back to a pointer when it leaves.
+  map.on('mouseleave', 'us_states_education', function () {
+      map.getCanvas().style.cursor = '';
+  });
+  map.addLayer({
+    id: "bfg",
+    type: "fill",
+    source: {
+      type: "geojson",
+      data: "data/bfg.geojson",
+    },
+    paint: {
+      "fill-opacity": .5,
+      "fill-color": "gold",
+    },
+  },
+  );
+  map.addLayer({
+    id:'schooldata',
+    type:'fill',
+    source: {
+        type:'geojson',
+        data:'data/dataframe.geojson'
+    },
+    paint:{
+        'fill-color':'#0276FD',
+        'fill-opacity': ['interpolate',['linear'],['get','B14001_001E'],
+1000,0.25,
+2000000,0.95]
+
+    }
+},"land"
+);
   map.addLayer(
     {
-      id: "medianIncome",
+      id: "us_states_education",
       type: "fill",
       source: {
         type: "geojson",
-        data: "data/medianIncome.geojson",
+        data: "data/stateData.geojson",
       },
       paint: {
         "fill-opacity": 0,
         "fill-color": [
-          "step",
-          ["get", "MHHI"],
+          "match",
+          ["get", "Type_of_teaching"],
+          "Requires teaching human-caused climate change",
+          "#fc8d59",
+          "Climate change only included in optional high school classes",
+          "#ffffbf",
+          "Currently lacks any mention of climate change in their state science standards",
+          "#91bfdb",
+          "Requires teaching climate change but not as predominantly human caused",
+          "#91cf60",
           "#ffffff",
-          20000,
-          "#ccedf5",
-          50000,
-          "#99daea",
-          75000,
-          "#66c7e0",
-          100000,
-          "#33b5d5",
-          150000,
-          "#00a2ca",
         ],
+        "fill-outline-color": "#000000",
       },
     },
-    "waterway-shadow"
+    "land"
   );
+  map.addLayer({
+    id: "penn_opinion",
+    type: "fill",
+    source: {
+      type: "geojson",
+      data: "data/pennOpCounties.geojson",
+    },
+    'paint': {
+      'fill-color': [
+      'interpolate',
+      ['linear'],
+      ['get', 'Percentage'],
+              5, '#071C57',
+              10, '#142C69',
+              15, '#203F79',
+              20, '#32528C',
+              25, '#46679E',
+              30, '#5F7FB0',
+              35, '#7999C1',
+              40, '#98B2D3', 
+              45, '#B9CFE5',
+              50, '#DFEBF7',
+              55, '#FEEB9E',
+              60, '#FBD885',
+              65, '#F7C36B',
+              70, '#F3A650',
+              75, '#EF8A36',
+              80, '#DB5A2F',
+              85, '#D0372D',
+              90, '#A12A30' ,
+              95, '#7A203E',
+              100, '#4E184A',
+
+          ],
+  },
+},"land")
+  //Pop-up code
+  map.on('click', 'bfg', function (e) {
+    new mapboxgl.Popup()
+        .setLngLat(e.lngLat)
+        .setHTML('<h2>' + 'Come high water' + '<br></h2><hr>' +  '<h4>' + 'The Bloomsburg Fairgrounds have seen progressively worse flooding over the past sevearl decades. Experts blame climate change.' + '</h4>')
+        .addTo(map);
+});
 
   // Setup the instance, pass callback functions
   scroller

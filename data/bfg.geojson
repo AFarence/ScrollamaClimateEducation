@@ -1,0 +1,16 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {"label-name":"BloomsburgFairgrounds"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.46930694580078,
+          40.9954799059078
+        ]
+      }
+    }
+  ]
+}

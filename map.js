@@ -218,49 +218,105 @@ map.on("load", function () {
       },
     });
   }
-  map.addLayer(
-    {
-      id: "turnstileData",
-      type: "circle",
+  map.on("load", function () {
+    map.addLayer({
+      id: "us_states_education_outline",
+      type: "line",
       source: {
         type: "geojson",
-        data: "data/turnstileData.geojson",
+        data: "data/statesData.geojson",
       },
       paint: {
-        "circle-color": [
-          "interpolate",
-          ["linear"],
-          ["get", "ENTRIES_DIFF"],
-          -1,
-          "#ff4400",
-          -0.7,
-          "#ffba31",
-          -0.4,
-          "#ffffff",
-        ],
-        "circle-stroke-color": "#4d4d4d",
-        "circle-stroke-width": 0.5,
-        "circle-radius": [
-          "interpolate",
-          ["exponential", 2],
-          ["zoom"],
-          10,
-          ["interpolate", ["linear"], ["get", "ENTRIES_DIFF"], -1, 10, -0.4, 1],
-          15,
-          [
-            "interpolate",
-            ["linear"],
-            ["get", "ENTRIES_DIFF"],
-            -1,
-            25,
-            -0.4,
-            12,
-          ],
-        ],
+        "line-color": "#ffffff",
+        "line-width": 0.7,
       },
     },
+    "waterway-label"
+  ); map.on(
+    {
+      id: "bfg",
+      type: "symbol",
+      source: {
+        type: "geojson",
+        data: "data/bfg.geojson",
+      },
+      paint: { paint: {
+        match:
+        ["get","coordinates"],
+        "circle-opacity": 0,
+        "circle-stroke-opacity": 0,
+        "circle-color": "gold",
+        "circle-stroke-color": "black",
+        "circle-stroke-width": 0.5,
+      },
+    },
+  },
+    "road-label-simple"
+  ); map.add(
+    {
+      id: "bfg",
+      type: "symbol",
+      source: {
+        type: "geojson",
+        data: "data/bfg.geojson",
+      },
+      paint: { paint: {
+        "circle-opacity": 0,
+        "circle-stroke-opacity": 0,
+        "circle-color": "gold",
+        "circle-stroke-color": "black",
+        "circle-stroke-width": 0.5,
+      },
+    },
+  },
     "road-label-simple"
   );
+  map.addLayer({
+    id: "us_states_education",
+    type: "fill",
+    source: {
+      type: "geojson",
+      data: "data/stateData.geojson",
+    },
+    paint: {
+      "fill-color": [
+        "match",
+        ["get", "Type_of_teaching"],
+        "Requires teaching human-caused climate change", "#fc8d59",
+        "Climate change only included in optional high school classes", "#ffffbf",
+        "Currently lacks any mention of climate change in their state science standards", "#91bfdb",
+        "Requires teaching climate change but not as predominantly human caused", "#91cf60",
+        "#ffffff",
+      ],
+      "fill-outline-color": "#000000",
+      },
+    },
+    "us_states_education_outline"
+    );
+  });
+  
+  // Create the popup
+  map.on('click', 'us_states_education', function (e) {
+    var stateName = e.features[0].properties.NAME;
+    var education = e.features[0].properties.Type_of_teaching;
+    var ngss = e.features[0].properties.NGSS;
+    stateName = stateName.toUpperCase();
+    new mapboxgl.Popup()
+        .setLngLat(e.lngLat)
+        .setHTML('<h4><b>'+stateName+'</b></h4>'
+        + '<h4>' + education +'</h4>'
+        + '<i><h4>' + ngss +'</h4></i>')
+        .addTo(map);
+  });
+  
+  // Change the cursor to a pointer when the mouse is over the us_states_elections layer.
+  map.on('mouseenter', 'us_states_education', function () {
+    map.getCanvas().style.cursor = 'pointer';
+  });
+  // Change it back to a pointer when it leaves.
+  map.on('mouseleave', 'us_states_education', function () {
+      map.getCanvas().style.cursor = '';
+  });  
   map.addLayer(
     {
       id: "medianIncome",

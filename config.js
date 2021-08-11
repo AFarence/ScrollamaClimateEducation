@@ -111,7 +111,7 @@ var config = {
         onChapterExit: [],
       },
     {
-      id: "floodMap",
+      id: "bfg",
       alignment: "right",
       hidden: false,
       chapterDiv: divChapter0,
@@ -196,7 +196,7 @@ var config = {
     },
     {
       id: "keepingScore",
-      alignment: "right",
+      alignment: "full",
       hidden: false,
       title: "",
       image: "",

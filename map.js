@@ -260,7 +260,7 @@ for (var i = 0; i < layers.length; i++) {
     //"us_states_education_outline"
     );
   });
-  
+
   // Create the popup
   map.on('click', 'us_states_education', function (e) {
     var stateName = e.features[0].properties.NAME;
@@ -274,7 +274,7 @@ for (var i = 0; i < layers.length; i++) {
         + '<i><h4>' + ngss +'</h4></i>')
         .addTo(map);
   });
-  
+
   // Change the cursor to a pointer when the mouse is over the us_states_elections layer.
   map.on('mouseenter', 'us_states_education', function () {
     map.getCanvas().style.cursor = 'pointer';
@@ -359,7 +359,7 @@ for (var i = 0; i < layers.length; i++) {
               25, '#46679E',
               30, '#5F7FB0',
               35, '#7999C1',
-              40, '#98B2D3', 
+              40, '#98B2D3',
               45, '#B9CFE5',
               50, '#DFEBF7',
               55, '#FEEB9E',

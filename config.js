@@ -8,9 +8,8 @@ let lowTitleDiv = "<h5>Pennsylvania is the only one that lacks any mention of cl
 let bylineDiv = "<h4>By Sheridan Wall, Bianca Pallaro, Annie Njanja, and Adam Farence</h4>";
 
 let descriptionDiv =
-"<p>Dan Vandenberg showed his home solar electric system through the lens of his iphone. It was in the middle of the pandemic, and he was teaching high school science students the benefits of renewable energy through Zoom.</p>" +
-'<p>He has a master’s degree in environmental science and emphasizes climate change, and its human impact, in all of his science classes since he started teaching at Springfield High School 35 years ago.</p>'
-//'<p>While Vandenberg insists on teaching climate change, even in his chemistry classes, there is currently no legal framework in Pennsylvania that mandates he do so. Pennsylvania is the only state in the country that currently lacks any mention of climate change in its required learning objectives.'
+'“<p>Over the 35 years Dan Vandenburg has taught science at Springfield High School in Springfield, Pa., he has made a point to emphasize the importance of understanding climate change and its human impact.</p>”' +
+'<p>His favorite teaching material is a photo taken by a friend on the Bloomsburg Fairgrounds.</p>'
 
 let footerDiv =
   '<p>This story is based on multiple interviews by current and former teachers, climate research groups, government officials, and the following datasets: INCLUDE DATASET LIST HERE' +
@@ -18,8 +17,8 @@ let footerDiv =
 
 let divChapter0 =
 "<h3>Rising Tides</h3>" +
-"<p>To teach it, he uses a photo taken by a friend on the Bloomsburg Fairgrounds. The fairgrounds are a few miles south of where he grew up, and the building shows high water marks from four different floods in the area. The most recent line almost touches the building’s roof. </p>" +
-"<p>“I've grown up here in Pennsylvania. I moved here when I was in first grade. I know Pennsylvania. And I've seen the changes,” he said. “I tell the kids, ‘If you warm the atmosphere and you add more moisture, that water's going to come down eventually. And that's what you're seeing now in these floods.”</p>" +
+'<p>The photo bears the history of flooding in Fairgrounds, which is  a few miles south of where he grew up. Captured in the image is a building with high water marks from four different floods, with the most recent line almost touching its roof. </p>' +
+'<p>“I moved here when I was in first grade. I know Pennsylvania. And I\'ve seen the changes,” said Vandenburg, who has a master\'s degree in environmental science. “I tell the kids, ‘If you warm the atmosphere and you add more moisture, that water\'s going to come down eventually. And that\'s what you\'re seeing now in these floods.”</p>' +
 "<img src='images/floodLevels.png'>" +
 "<p class='imageCredit'>Courtesy Photo</p>";
 
@@ -48,37 +47,22 @@ let divChapter3 =
 '<p style="max-width:600px; margin-left:auto; margin-right:auto">“Learning outcomes are essential for climate leadership, for climate engagement, civic participation, things that will make a difference, and help us hold the education system accountable to making that difference”, said Kwauk. “We really need to focus on developing those indicators and those measurement frameworks.”</p>'
 
 let divChapter4 =
-"<h3>Taking Matters into their own hands</h3>" +
-"<p>But some teachers, like Vandenberg from Pennsylvania, who work in states that don’t require teaching climate change, believe it’s imperative to incorporate the topic into their classes.</p>" +
-'<p>Vandenberg teaches elective courses on humans and the environment and environmental science, which include curriculum focused on climate change. But even in his general chemistry classes, his students get a “full dose of climate change,” and he dedicates a few lessons to the impact of fossil fuels on the environment.</p>' +
-"<img src='images/Jackie.jpeg'>" +
-"<p class='imageCredit'>Courtesy Photo</p>";
-
-
-// let divChapter4 =
-//   "<h3 style='max-width:600px; margin-left:auto; margin-right:auto'>Lack of national guidance</h3>" +
-//   "<p style='max-width:600px; margin-left:auto; margin-right:auto'>In the United States, there is no national policy that mandates schools to teach climate change. Instead, individual states decide whether to include climate change in their science standards, which define what students should know by the end of each grade level. Only 29 states and D.C. require teaching man-made climate change, while 15 others do mention climate change but don’t specify its human cause, according to a 2020 The Aspen Institute report.</p>" +
-//   "<p style='max-width:600px; margin-left:auto; margin-right:auto'>“Unlike most of the developed world, it doesn't make any sense to talk about national education policy on climate education, because there isn't one,” said Glen Branch, the deputy director of the National Center for Science Education. “[Standards] vary greatly in their coverage, the extent of their coverage and the quality of their coverage of climate change.”</p>" +
-//   "<p style='max-width:600px; margin-left:auto; margin-right:auto'>In April 2013, teachers, scientists and researchers partnered with 26 states to develop the Next Generation Science Standards (NGSS), a new set of K-12 science standards that encourages critical thinking activities and connects scientific concepts to real-life situations. These introduce climate change-related topics as early as kindergarten and explicitly address the human effect on global warming at the middle and high school level.</p>" +
-//   "<p style='max-width:600px; margin-left:auto; margin-right:auto'>Twenty states and D.C. have adopted the NGSS, while another 24 have written their own standards based on them. But in 6 states, which encompass nearly 30% of public school students, science standards do not follow the NGSS’s framework, according to a report from the National Center for Science Education and the Texas Freedom Network Education Fund, published in October 2020.</p>";
-
-let divChapter5 =
+'<h3 style="max-width:600px; margin-left:auto; margin-right:auto">Taking Matters into their own hands</h3>' +
+'<p style="max-width:600px; margin-left:auto; margin-right:auto">But some teachers, like Vandenberg from Pennsylvania, who work in states that don’t require teaching climate change, believe it’s imperative to incorporate the topic into their classes.</p>' +
+'<p style="max-width:600px; margin-left:auto; margin-right:auto">Vandenberg teaches elective courses on humans and the environment and environmental science, which include curriculum focused on climate change. But even in his general chemistry classes, his students get a “full dose of climate change,” and he dedicates a few lessons to the impact of fossil fuels on the environment.</p>' +
+"<img style='max-width:600px; margin-left:auto; margin-right:auto' center src='images/teacherDan.jpeg'>" +
+"<p style='max-width:600px; margin-left:auto; margin-right:auto' class='imageCredit'>Courtesy Photo - Dan Vandenburg routinely teaches his students about climate change.</p>" +
 "<h3 style='max-width:600px; margin-left:auto; margin-right:auto'>Public Opinion</h3>" +
 '<p style="max-width:600px; margin-left:auto; margin-right:auto">Ninth grade biology teacher, Jackie Falcone, also teaches the human impact of climate change. In Pennsylvania, biology classes follow the content included in the Biology Keystone Exam, an end-of-the-year assessment which informs the material Falcone includes in her lessons. </p>' +
 '<p style="max-width:600px; margin-left:auto; margin-right:auto">Though the content in the exam doesn’t specifically address human-caused climate change, Falcone chooses to emphasize its influence on the topics she covers in class. </p>' +
 '<p style="max-width:600px; margin-left:auto; margin-right:auto">“I like to make them understand that all of this is connected,” Falcone said. “Even just talking about severe storms, and the tornadoes that have been happening more frequently around here, like all of that is very tangible for the students.”</p>' +
 '<p style="max-width:600px; margin-left:auto; margin-right:auto">But not all teachers at Springfield promote instruction on the human impact of climate change. Falcone has received pushback from a social studies teacher at the school, and she said she occasionally “picks on this other teacher” as part of a “running joke.” In the past, she’s also detected some doubt from students.</p>' +
-'<p style="max-width:600px; margin-left:auto; margin-right:auto">“Some of the students have definitely asked questions where you can understand that they\'re coming from a place of preconceived notions of climate change, and it being political,” Falcone said.</p>'
-'<p style="max-width:600px; margin-left:auto; margin-right:auto">But climate deniers or skeptics are not the majority. At least 78% of Pennsylvania residents believe schools should teach about the causes, consequences, and potential solutions to global warming, according to Yale Climate Opinion Maps published last year.</p>'
-
-let divChapter6 =
-"<h3>Rising Temperatures</h3>" +
-"<p>Like Vandenberg and Falcone note, communities in Pennsylvania are already experiencing the effects of climate change, and they’re expected to worsen as temperatures rise. Worst case climate projections show Pennsylvania will warm by almost 10 degrees if no actions are taken to mitigate climate change, according to the Representative Concentration Pathway (RCP) 8.5 model.</p>"
-
-
-let divChapter7 =
-"<h3 style='max-width:600px; margin-left:auto; margin-right:auto'>Looking to the Future</h3>" +
-'<p style="max-width:600px; margin-left:auto; margin-right:auto">Governor Tom Wolf’s 2021 Climate Impacts Report published in May, confirms the rising average temperature projections and the increased occurrences of heatwaves. Pennsylvania is also considered at high risk for flooding, and the report predicts an 8% increase in precipitation by midcentury, primarily in the form of more frequent heavy and extreme rainfall events.</p>' +
+'<p style="max-width:600px; margin-left:auto; margin-right:auto">“Some of the students have definitely asked questions where you can understand that they\'re coming from a place of preconceived notions of climate change, and it being political,” Falcone said.</p>' +
+'<p style="max-width:600px; margin-left:auto; margin-right:auto">But climate deniers or skeptics are not the majority. At least 78% of Pennsylvania residents believe schools should teach about the causes, consequences, and potential solutions to global warming, according to Yale Climate Opinion Maps published last year.</p>' +
+"<img style='max-width:600px; margin-left:auto; margin-right:auto' center src='images/Jackie.jpeg'>" +
+"<p style='max-width:600px; margin-left:auto; margin-right:auto' class='imageCredit'>Courtesy Photo - Jackie Falcone has received pushback for her views on climate change.</p>" +
+"<p style='max-width:600px; margin-left:auto; margin-right:auto'>Like Vandenberg and Falcone note, communities in Pennsylvania are already experiencing the effects of climate change, and they’re expected to worsen as temperatures rise. Worst case climate projections show Pennsylvania will warm by almost 10 degrees if no actions are taken to mitigate climate change, according to the Representative Concentration Pathway (RCP) 8.5 model.</p>" +
+'<p style="max-width:600px; margin-left:auto; margin-right:auto"> Governor Tom Wolf’s 2021 Climate Impacts Report published in May, confirms the rising average temperature projections and the increased occurrences of heatwaves. Pennsylvania is also considered at high risk for flooding, and the report predicts an 8% increase in precipitation by midcentury, primarily in the form of more frequent heavy and extreme rainfall events.</p>' +
 '<p style="max-width:600px; margin-left:auto; margin-right:auto">"It is important to address climate change in the classrooms because today\'s students are tomorrow\'s citizens, and they have to face the challenges presented by the warming world,” said Branch. </p>' +
 '<p style="max-width:600px; margin-left:auto; margin-right:auto">Pennsylvania’s state science standards are nearly two decades old and don’t acknowledge climate change at all. But in the fall of 2019, the state began the process of reviewing and updating them. </p>' +
 '<p style="max-width:600px; margin-left:auto; margin-right:auto">The proposed standards have been modeled by the NGSS, so they require explicit teaching about climate change. But scientists and advocates have identified a key backdrop in the revision: it downplays the human responsibility for the warming of the planet, which the NGSS emphasized in a clarification statement. </p>' +
@@ -86,6 +70,22 @@ let divChapter7 =
 '<p style="max-width:600px; margin-left:auto; margin-right:auto">“The goal is to have very clear standards, very well defined, so when school districts develop the curriculum to teach these contents, there\'s no question about what the students are supposed to master,” said Christopher Lilienthal, assistant director of communications at Pennsylvania’s State Education Association.</p>' +
 '<p style="max-width:600px; margin-left:auto; margin-right:auto">But even if the human-cause factor is included in the standard, the process will not wrap up until the end of this year and the schools will have three years to fully implement them. If the standards are approved, they would likely be instituted by the 2024-25 school year. <p>' +
 '<p style="max-width:600px; margin-left:auto; margin-right:auto">“Our members, especially our science teachers, are really eager to see this process move forward to have in place standards and curriculum that really match the challenges that we face as a society,” said Lilienthal, who hopes the revision will provide students with “the understanding and the knowledge to be the best leaders of tomorrow.”</p>'
+
+
+
+//let divChapter5 =
+
+
+// let divChapter7 =
+// "<h3 style='max-width:600px; margin-left:auto; margin-right:auto'>Looking to the Future</h3>" +
+// '<p style="max-width:600px; margin-left:auto; margin-right:auto">Governor Tom Wolf’s 2021 Climate Impacts Report published in May, confirms the rising average temperature projections and the increased occurrences of heatwaves. Pennsylvania is also considered at high risk for flooding, and the report predicts an 8% increase in precipitation by midcentury, primarily in the form of more frequent heavy and extreme rainfall events.</p>' +
+// '<p style="max-width:600px; margin-left:auto; margin-right:auto">"It is important to address climate change in the classrooms because today\'s students are tomorrow\'s citizens, and they have to face the challenges presented by the warming world,” said Branch. </p>' +
+// '<p style="max-width:600px; margin-left:auto; margin-right:auto">Pennsylvania’s state science standards are nearly two decades old and don’t acknowledge climate change at all. But in the fall of 2019, the state began the process of reviewing and updating them. </p>' +
+// '<p style="max-width:600px; margin-left:auto; margin-right:auto">The proposed standards have been modeled by the NGSS, so they require explicit teaching about climate change. But scientists and advocates have identified a key backdrop in the revision: it downplays the human responsibility for the warming of the planet, which the NGSS emphasized in a clarification statement. </p>' +
+// '<p style="max-width:600px; margin-left:auto; margin-right:auto">The revision was released for a month-long public comment period that ended in July. </p>' +
+// '<p style="max-width:600px; margin-left:auto; margin-right:auto">“The goal is to have very clear standards, very well defined, so when school districts develop the curriculum to teach these contents, there\'s no question about what the students are supposed to master,” said Christopher Lilienthal, assistant director of communications at Pennsylvania’s State Education Association.</p>' +
+// '<p style="max-width:600px; margin-left:auto; margin-right:auto">But even if the human-cause factor is included in the standard, the process will not wrap up until the end of this year and the schools will have three years to fully implement them. If the standards are approved, they would likely be instituted by the 2024-25 school year. <p>' +
+// '<p style="max-width:600px; margin-left:auto; margin-right:auto">“Our members, especially our science teachers, are really eager to see this process move forward to have in place standards and curriculum that really match the challenges that we face as a society,” said Lilienthal, who hopes the revision will provide students with “the understanding and the knowledge to be the best leaders of tomorrow.”</p>'
 
 
 var config = {
@@ -107,7 +107,7 @@ var config = {
       id: "overallMap",
       alignment: "left",
       hidden: false,
-      chapterDiv: descriptionDiv,
+      chapterDiv: divChapter0,
       location: {
         center: [-76.465, 40.987],
         zoom: 14,
@@ -145,9 +145,9 @@ var config = {
     },
     {
       id: "overallmap",
-      alignment: "right",
+      alignment: "full",
       hidden: false,
-      chapterDiv: divChapter0,
+      chapterDiv: divChapter1,
       location: {
         center: [-76.465, 40.987],
         zoom: 15.25,
@@ -190,7 +190,7 @@ var config = {
       title: "",
       image: "",
       description: "",
-      chapterDiv: divChapter1,
+      chapterDiv: divChapter2,
       location: {
         center: [-76.465, 40.987],
         zoom: 12.55,
@@ -243,7 +243,7 @@ var config = {
       title: "",
       image: "",
       description: "",
-      chapterDiv: divChapter2,
+      chapterDiv: divChapter3,
       location: {
         center: [-95, 40.725],
         zoom: 3.5,
@@ -296,49 +296,6 @@ var config = {
       title: "",
       image: "",
       description: "",
-      chapterDiv: divChapter3,
-      location: {
-        center: [-95, 22.725],
-        zoom: 2.5,
-        zoomSmall: 14,
-        pitch: 40,
-        bearing: -9,
-      },
-      mapAnimation: "flyTo",
-      rotateAnimation: false,
-      callback: "",
-      onChapterEnter: [
-        {
-          layer: "bfg",
-          opacity: 0,
-          duration: 300,
-        },
-        {
-          layer: "us_states_education", // overallMap
-          opacity: 0,
-          duration: 300,
-        },
-      ],
-      onChapterExit: [
-        {
-          layer: "us_states_education", // overallMap
-          opacity: 0,
-          duration: 300,
-        },
-        {
-          layer: "bfg",
-          opacity: 0,
-          duration: 300,
-        },
-      ],
-    },
-    {
-      id: "takingMattersIntoTheirOwnHands",
-      alignment: "left",
-      hidden: false,
-      title: "",
-      image: "",
-      description: "",
       chapterDiv: divChapter4,
       location: {
         center: [-95, 22.725],
@@ -352,117 +309,160 @@ var config = {
       callback: "",
       onChapterEnter: [
         {
-          layer: "overallMap",
-          opacity: .6,
+          layer: "bfg",
+          opacity: 0,
+          duration: 300,
+        },
+        {
+          layer: "us_states_education", // overallMap
+          opacity: 0,
           duration: 300,
         },
       ],
       onChapterExit: [
         {
-          layer: "overallMap",
-          opacity: .6,
+          layer: "us_states_education", // overallMap
+          opacity: 0,
+          duration: 300,
+        },
+        {
+          layer: "bfg",
+          opacity: 0,
           duration: 300,
         },
       ],
     },
-    {
-      id: "makingthegrade",
-      alignment: "full",
-      hidden: false,
-      title: "",
-      image: "",
-      description: "",
-      chapterDiv: divChapter5,
-      location: {
-        center: [-95, 42.725],
-        zoom: 3.5,
-        zoomSmall: 14,
-        pitch: 40,
-        bearing: -9,
-      },
-      mapAnimation: "flyTo",
-      rotateAnimation: false,
-      callback: "",
-      onChapterEnter: [
-        {
-          layer: "overallMap",
-          opacity: 1,
-          duration: 300,
-        },
-      ],
-      onChapterExit: [
-        {
-          layer: "overallMap",
-          opacity: .6,
-          duration: 300,
-        },
-      ],
-    },
-    {
-      id: "publicOpinion",
-      alignment: "left",
-      hidden: false,
-      title: "",
-      image: "",
-      description: "",
-      chapterDiv: divChapter6,
-      location: {
-        center: [-95, 42.725],
-        zoom: 3.5,
-        zoomSmall: 14,
-        pitch: 40,
-        bearing: -9,
-      },
-      mapAnimation: "flyTo",
-      rotateAnimation: false,
-      callback: "",
-      onChapterEnter: [
-        {
-          layer: "schooldata",
-          opacity: .6,
-          duration: 300,
-        },
-      ],
-      onChapterExit: [
-        {
-          layer: "overallMap",
-          opacity: .6,
-          duration: 300,
-        },
-      ],
-    },
-    {
-      id: "publicOpinion",
-      alignment: "full",
-      hidden: false,
-      title: "",
-      image: "",
-      description: "",
-      chapterDiv: divChapter7,
-      location: {
-        center: [-95, 42.725],
-        zoom: 3.5,
-        zoomSmall: 14,
-        pitch: 40,
-        bearing: -9,
-      },
-      mapAnimation: "flyTo",
-      rotateAnimation: false,
-      callback: "",
-      onChapterEnter: [
-        {
-          layer: "overallMap",
-          opacity: .6,
-          duration: 300,
-        },
-      ],
-      onChapterExit: [
-        {
-          layer: "overallMap",
-          opacity: .6,
-          duration: 300,
-        },
-      ],
-    },
+    // {
+    //   id: "takingMattersIntoTheirOwnHands",
+    //   alignment: "full",
+    //   hidden: false,
+    //   title: "",
+    //   image: "",
+    //   description: "",
+    //   chapterDiv: divChapter5,
+    //   location: {
+    //     center: [-95, 22.725],
+    //     zoom: 2.5,
+    //     zoomSmall: 14,
+    //     pitch: 40,
+    //     bearing: -9,
+    //   },
+    //   mapAnimation: "flyTo",
+    //   rotateAnimation: false,
+    //   callback: "",
+    //   onChapterEnter: [
+    //     {
+    //       layer: "overallMap",
+    //       opacity: .6,
+    //       duration: 300,
+    //     },
+    //   ],
+    //   onChapterExit: [
+    //     {
+    //       layer: "overallMap",
+    //       opacity: .6,
+    //       duration: 300,
+    //     },
+    //   ],
+    // },
+    // {
+    //   id: "makingthegrade",
+    //   alignment: "full",
+    //   hidden: false,
+    //   title: "",
+    //   image: "",
+    //   description: "",
+    //   chapterDiv: divChapter5,
+    //   location: {
+    //     center: [-95, 42.725],
+    //     zoom: 3.5,
+    //     zoomSmall: 14,
+    //     pitch: 40,
+    //     bearing: -9,
+    //   },
+    //   mapAnimation: "flyTo",
+    //   rotateAnimation: false,
+    //   callback: "",
+    //   onChapterEnter: [
+    //     {
+    //       layer: "overallMap",
+    //       opacity: 1,
+    //       duration: 300,
+    //     },
+    //   ],
+    //   onChapterExit: [
+    //     {
+    //       layer: "overallMap",
+    //       opacity: .6,
+    //       duration: 300,
+    //     },
+    //   ],
+    // },
+    // {
+    //   id: "publicOpinion",
+    //   alignment: "left",
+    //   hidden: false,
+    //   title: "",
+    //   image: "",
+    //   description: "",
+    //   chapterDiv: divChapter4,
+    //   location: {
+    //     center: [-95, 42.725],
+    //     zoom: 3.5,
+    //     zoomSmall: 14,
+    //     pitch: 40,
+    //     bearing: -9,
+    //   },
+    //   mapAnimation: "flyTo",
+    //   rotateAnimation: false,
+    //   callback: "",
+    //   onChapterEnter: [
+    //     {
+    //       layer: "schooldata",
+    //       opacity: .6,
+    //       duration: 300,
+    //     },
+    //   ],
+    //   onChapterExit: [
+    //     {
+    //       layer: "overallMap",
+    //       opacity: .6,
+    //       duration: 300,
+    //     },
+    //   ],
+    // },
+    // {
+    //   id: "publicOpinion",
+    //   alignment: "full",
+    //   hidden: false,
+    //   title: "",
+    //   image: "",
+    //   description: "",
+    //   chapterDiv: divChapter7,
+    //   location: {
+    //     center: [-95, 42.725],
+    //     zoom: 3.5,
+    //     zoomSmall: 14,
+    //     pitch: 40,
+    //     bearing: -9,
+    //   },
+    //   mapAnimation: "flyTo",
+    //   rotateAnimation: false,
+    //   callback: "",
+    //   onChapterEnter: [
+    //     {
+    //       layer: "overallMap",
+    //       opacity: .6,
+    //       duration: 300,
+    //     },
+    //   ],
+    //   onChapterExit: [
+    //     {
+    //       layer: "overallMap",
+    //       opacity: .6,
+    //       duration: 300,
+    //     },
+    //   ],
+    // },
   ],
 };

@@ -71,23 +71,6 @@ let divChapter4 =
 '<p style="max-width:600px; margin-left:auto; margin-right:auto">But even if the human-cause factor is included in the standard, the process will not wrap up until the end of this year and the schools will have three years to fully implement them. If the standards are approved, they would likely be instituted by the 2024-25 school year. <p>' +
 '<p style="max-width:600px; margin-left:auto; margin-right:auto">“Our members, especially our science teachers, are really eager to see this process move forward to have in place standards and curriculum that really match the challenges that we face as a society,” said Lilienthal, who hopes the revision will provide students with “the understanding and the knowledge to be the best leaders of tomorrow.”</p>'
 
-
-
-//let divChapter5 =
-
-
-// let divChapter7 =
-// "<h3 style='max-width:600px; margin-left:auto; margin-right:auto'>Looking to the Future</h3>" +
-// '<p style="max-width:600px; margin-left:auto; margin-right:auto">Governor Tom Wolf’s 2021 Climate Impacts Report published in May, confirms the rising average temperature projections and the increased occurrences of heatwaves. Pennsylvania is also considered at high risk for flooding, and the report predicts an 8% increase in precipitation by midcentury, primarily in the form of more frequent heavy and extreme rainfall events.</p>' +
-// '<p style="max-width:600px; margin-left:auto; margin-right:auto">"It is important to address climate change in the classrooms because today\'s students are tomorrow\'s citizens, and they have to face the challenges presented by the warming world,” said Branch. </p>' +
-// '<p style="max-width:600px; margin-left:auto; margin-right:auto">Pennsylvania’s state science standards are nearly two decades old and don’t acknowledge climate change at all. But in the fall of 2019, the state began the process of reviewing and updating them. </p>' +
-// '<p style="max-width:600px; margin-left:auto; margin-right:auto">The proposed standards have been modeled by the NGSS, so they require explicit teaching about climate change. But scientists and advocates have identified a key backdrop in the revision: it downplays the human responsibility for the warming of the planet, which the NGSS emphasized in a clarification statement. </p>' +
-// '<p style="max-width:600px; margin-left:auto; margin-right:auto">The revision was released for a month-long public comment period that ended in July. </p>' +
-// '<p style="max-width:600px; margin-left:auto; margin-right:auto">“The goal is to have very clear standards, very well defined, so when school districts develop the curriculum to teach these contents, there\'s no question about what the students are supposed to master,” said Christopher Lilienthal, assistant director of communications at Pennsylvania’s State Education Association.</p>' +
-// '<p style="max-width:600px; margin-left:auto; margin-right:auto">But even if the human-cause factor is included in the standard, the process will not wrap up until the end of this year and the schools will have three years to fully implement them. If the standards are approved, they would likely be instituted by the 2024-25 school year. <p>' +
-// '<p style="max-width:600px; margin-left:auto; margin-right:auto">“Our members, especially our science teachers, are really eager to see this process move forward to have in place standards and curriculum that really match the challenges that we face as a society,” said Lilienthal, who hopes the revision will provide students with “the understanding and the knowledge to be the best leaders of tomorrow.”</p>'
-
-
 var config = {
   style: "mapbox://styles/afarence/ckry5zvgr20ya18pjibgaig7s",
   accessToken:
@@ -124,10 +107,20 @@ var config = {
           opacity: 0,
           duration: 300,
         },
+        {
+          layer: "penn_opinion", // "overallMap"
+          opacity: 0,
+          duration: 300,
+        },
       ],
       onChapterExit: [
         {
           layer: "us_states_education", // "overallMap"
+          opacity: 0,
+          duration: 300,
+        },
+        {
+          layer: "penn_opinion", // "overallMap"
           opacity: 0,
           duration: 300,
         },
@@ -154,10 +147,20 @@ var config = {
           opacity: 0,
           duration: 300,
         },
+        {
+          layer: "penn_opinion",
+          opacity: 0,
+          duration: 300,
+        },
       ],
       onChapterExit: [
         {
           layer: "us_states_education",
+          opacity: 0,
+          duration: 300,
+        },
+        {
+          layer: "penn_opinion",
           opacity: 0,
           duration: 300,
         },
@@ -188,6 +191,11 @@ var config = {
           duration: 300,
         },
         {
+          layer: "penn_opinion",
+          opacity: 0,
+          duration: 300,
+        },
+        {
           layer: "bfg",
           opacity: 0,
           duration: 300,
@@ -197,6 +205,11 @@ var config = {
         {
           layer: "us_states_education",
           opacity: .6,
+          duration: 300,
+        },
+        {
+          layer: "penn_opinion",
+          opacity: 0,
           duration: 300,
         },
         {
@@ -302,137 +315,5 @@ var config = {
         },
       ],
     },
-    // {
-    //   id: "takingMattersIntoTheirOwnHands",
-    //   alignment: "full",
-    //   hidden: false,
-    //   title: "",
-    //   image: "",
-    //   description: "",
-    //   chapterDiv: divChapter5,
-    //   location: {
-    //     center: [-95, 22.725],
-    //     zoom: 2.5,
-    //     zoomSmall: 14,
-    //     pitch: 40,
-    //     bearing: -9,
-    //   },
-    //   mapAnimation: "flyTo",
-    //   rotateAnimation: false,
-    //   callback: "",
-    //   onChapterEnter: [
-    //     {
-    //       layer: "overallMap",
-    //       opacity: .6,
-    //       duration: 300,
-    //     },
-    //   ],
-    //   onChapterExit: [
-    //     {
-    //       layer: "overallMap",
-    //       opacity: .6,
-    //       duration: 300,
-    //     },
-    //   ],
-    // },
-    // {
-    //   id: "makingthegrade",
-    //   alignment: "full",
-    //   hidden: false,
-    //   title: "",
-    //   image: "",
-    //   description: "",
-    //   chapterDiv: divChapter5,
-    //   location: {
-    //     center: [-95, 42.725],
-    //     zoom: 3.5,
-    //     zoomSmall: 14,
-    //     pitch: 40,
-    //     bearing: -9,
-    //   },
-    //   mapAnimation: "flyTo",
-    //   rotateAnimation: false,
-    //   callback: "",
-    //   onChapterEnter: [
-    //     {
-    //       layer: "overallMap",
-    //       opacity: 1,
-    //       duration: 300,
-    //     },
-    //   ],
-    //   onChapterExit: [
-    //     {
-    //       layer: "overallMap",
-    //       opacity: .6,
-    //       duration: 300,
-    //     },
-    //   ],
-    // },
-    // {
-    //   id: "publicOpinion",
-    //   alignment: "left",
-    //   hidden: false,
-    //   title: "",
-    //   image: "",
-    //   description: "",
-    //   chapterDiv: divChapter4,
-    //   location: {
-    //     center: [-95, 42.725],
-    //     zoom: 3.5,
-    //     zoomSmall: 14,
-    //     pitch: 40,
-    //     bearing: -9,
-    //   },
-    //   mapAnimation: "flyTo",
-    //   rotateAnimation: false,
-    //   callback: "",
-    //   onChapterEnter: [
-    //     {
-    //       layer: "schooldata",
-    //       opacity: .6,
-    //       duration: 300,
-    //     },
-    //   ],
-    //   onChapterExit: [
-    //     {
-    //       layer: "overallMap",
-    //       opacity: .6,
-    //       duration: 300,
-    //     },
-    //   ],
-    // },
-    // {
-    //   id: "publicOpinion",
-    //   alignment: "full",
-    //   hidden: false,
-    //   title: "",
-    //   image: "",
-    //   description: "",
-    //   chapterDiv: divChapter7,
-    //   location: {
-    //     center: [-95, 42.725],
-    //     zoom: 3.5,
-    //     zoomSmall: 14,
-    //     pitch: 40,
-    //     bearing: -9,
-    //   },
-    //   mapAnimation: "flyTo",
-    //   rotateAnimation: false,
-    //   callback: "",
-    //   onChapterEnter: [
-    //     {
-    //       layer: "overallMap",
-    //       opacity: .6,
-    //       duration: 300,
-    //     },
-    //   ],
-    //   onChapterExit: [
-    //     {
-    //       layer: "overallMap",
-    //       opacity: .6,
-    //       duration: 300,
-    //     },
-    //   ],
-    // },
   ],
 };

@@ -88,6 +88,19 @@ body {
   padding: 0.75em 0em;
   margin: 0px auto;
 }
+
+#overallmap {
+  opacity: .8;
+  max-width: 350px;
+  max-height: 350px;
+}
+
+#divPennLegend{
+  opacity: .8;
+  max-width: 350px;
+  max-height: 350px;
+}
+
 a, a:hover, a:visited {
   color: #e96138;
 }
@@ -146,6 +159,10 @@ a, a:hover, a:visited {
     margin-right: auto;
     width: 50%;
   }
+.legend {
+  margin-left: 0;
+  margin-right: 0;
+}
 /* Fix issue on mobile browser where scroll breaks  */
 .mapboxgl-canvas-container.mapboxgl-touch-zoom-rotate.mapboxgl-touch-drag-pan, 
 .mapboxgl-canvas-container.mapboxgl-touch-zoom-rotate.mapboxgl-touch-drag-pan .mapboxgl-canvas {

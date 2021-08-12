@@ -47,6 +47,14 @@ function setLayerOpacity(layer) {
   });
 }
 
+function setLayerVisibility(layer) {
+  if (layer.visibility === 'visible') {
+    map.setLayoutProperty(layer.layer, 'visibility', 'visible');
+  } else {
+    map.setLayoutProperty(layer.layer, 'visibility', 'none');
+  }
+}
+
 /* Next, these variables and functions create the story and vignette html
 elements, and populate them with the content from the config.js file.
 They also assign a css class to certain elements, also based on the
@@ -261,13 +269,16 @@ map.addLayer({
   );
 });
 
+let popup = new mapboxgl.Popup()
+
 // Create the popup
 map.on('click', 'us_states_education', function (e) {
   var stateName = e.features[0].properties.NAME;
   var education = e.features[0].properties.Type_of_teaching;
   var ngss = e.features[0].properties.NGSS;
   stateName = stateName.toUpperCase();
-  new mapboxgl.Popup()
+  
+  popup
       .setLngLat(e.lngLat)
       .setHTML('<h4><b>'+stateName+'</b></h4>'
       + '<h4>' + education +'</h4>')
@@ -277,7 +288,8 @@ map.on('click', 'us_states_education', function (e) {
   map.on('click', 'penn_opinion', function (e) {
     var countyName = e.features[0].properties.NAMELSAD;
     var percentage = e.features[0].properties.Percentage;
-    new mapboxgl.Popup()
+    
+    popup
         .setLngLat(e.lngLat)
         .setHTML('<h4><b>' + countyName + '</b></h4>'
         + '<p><b> % of adults who believe schools should teach about climate change: </b>' + percentage)
@@ -390,7 +402,7 @@ map.on('mouseleave', 'penn_opinion', function () {
 },"waterway-shadow")
   //Pop-up code
   map.on('click', 'bfg', function (e) {
-    new mapboxgl.Popup()
+    popup
         .setLngLat(e.lngLat)
         .setHTML('<h2>' + 'Come high water' + '<br></h2><hr>' +  '<p>' + 'The Bloomsburg Fairgrounds have seen progressively worse flooding over the past sevearl decades. Experts blame climate change.' + '</p>')
         .addTo(map);
@@ -427,6 +439,9 @@ map.on('mouseleave', 'penn_opinion', function () {
       if (chapter.onChapterEnter.length > 0) {
         chapter.onChapterEnter.forEach(setLayerOpacity);
       }
+      if (chapter.onChapterEnter.length > 0) {
+        chapter.onChapterEnter.forEach(setLayerVisibility);
+      }
       if (chapter.callback) {
         window[chapter.callback]();
       }
@@ -443,6 +458,7 @@ map.on('mouseleave', 'penn_opinion', function () {
       }
     })
     .onStepExit((response) => {
+      popup.remove();
       var chapter = config.chapters.find(
         (chap) => chap.id === response.element.id
       );

@@ -123,16 +123,19 @@ var config = {
           layer: "us_states_education", // "overallMap"
           opacity: 0,
           duration: 300,
+          visibility: "none"
         },
         {
           layer: "bfg", // "overallMap"
           opacity: .6,
           duration: 300,
+          visibility: "visible"
         },
         {
           layer: "penn_opinion", // "overallMap"
           opacity: 0,
           duration: 300,
+          visibility: "none"
         },
       ],
       onChapterExit: [
@@ -140,16 +143,19 @@ var config = {
           layer: "us_states_education", // "overallMap"
           opacity: 0,
           duration: 300,
+          visibility: "none"
         },
         {
           layer: "bfg", // "overallMap"
           opacity: .6,
           duration: 300,
+          visibility: "visible"
         },
         {
           layer: "penn_opinion", // "overallMap"
           opacity: 0,
           duration: 300,
+          visibility: "none"
         },
       ],
     },
@@ -173,11 +179,13 @@ var config = {
           layer: "us_states_education",
           opacity: 1,
           duration: 300,
+          visibility: "visible"
         },
         {
           layer: "penn_opinion",
           opacity: 0,
           duration: 300,
+          visibility: "none"
         },
       ],
       onChapterExit: [
@@ -185,11 +193,13 @@ var config = {
           layer: "us_states_education",
           opacity: 1,
           duration: 300,
+          visibility: "visible"
         },
         {
           layer: "penn_opinion",
           opacity: 0,
           duration: 300,
+          visibility: "none"
         },
       ],
     },
@@ -213,11 +223,13 @@ var config = {
            layer: "us_states_education",
            opacity: 1,
            duration: 300,
+           visibility: "visible"
          },
          {
            layer: "penn_opinion",
            opacity: 0,
            duration: 300,
+           visibility: "none"
          },
        ],
        onChapterExit: [
@@ -225,11 +237,13 @@ var config = {
            layer: "us_states_education",
            opacity: 1,
            duration: 300,
+           visibility: "visible"
          },
          {
            layer: "penn_opinion",
            opacity: 0,
            duration: 300,
+           visibility: "none"
          },
        ],
      },
@@ -256,16 +270,19 @@ var config = {
           layer: "us_states_education",
           opacity: 0,
           duration: 300,
+          visibility: "none"
         },
         {
           layer: "penn_opinion",
           opacity: 0,
           duration: 300,
+          visibility: "none"
         },
         {
           layer: "bfg",
           opacity: 0,
           duration: 300,
+          visibility: "none"
         },
       ],
       onChapterExit: [
@@ -273,16 +290,19 @@ var config = {
           layer: "us_states_education",
           opacity: 0,
           duration: 300,
+          visibility: "none"
         },
         {
           layer: "penn_opinion",
           opacity: 1,
           duration: 300,
+          visibility: "visible"
         },
         {
           layer: "bfg",
           opacity: 0,
           duration: 300,
+          visibility: "none"
         },
       ],
     },
@@ -309,16 +329,19 @@ var config = {
           layer: "us_states_education",
           opacity: 0,
           duration: 300,
+          visibility: "none"
         },
         {
           layer: "penn_opinion",
           opacity: 1,
           duration: 300,
+          visibility: "visible"
         },
         {
           layer: "bfg",
           opacity: 0,
           duration: 300,
+          visibility: "none"
         },
       ],
       onChapterExit: [
@@ -326,16 +349,19 @@ var config = {
           layer: "us_states_education",
           opacity: 0,
           duration: 300,
+          visibility: "none"
         },
         {
           layer: "penn_opinion",
           opacity: 1,
           duration: 300,
+          visibility: "visible"
         },
         {
           layer: "bfg",
           opacity: 0,
           duration: 300,
+          visibility: "none"
         },
       ],
     },
@@ -362,16 +388,19 @@ var config = {
           layer: "bfg",
           opacity: 0,
           duration: 300,
+          visibility: "none"
         },
         {
           layer: "us_states_education", // overallMap
           opacity: 0,
           duration: 300,
+          visibility: "none"
         },
         {
           layer: "penn_opinion",
           opacity: 1,
           duration: 300,
+          visibility: "visible"
         },
       ],
       onChapterExit: [
@@ -379,16 +408,19 @@ var config = {
           layer: "bfg",
           opacity: 0,
           duration: 300,
+          visibility: "none"
         },
         {
           layer: "us_states_education", // overallMap
           opacity: 0,
           duration: 300,
+          visibility: "none"
         },
         {
           layer: "penn_opinion",
           opacity: 1,
           duration: 300,
+          visibility: "visible"
         },
       ],
     },

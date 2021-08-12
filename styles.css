@@ -10,7 +10,7 @@ body {
 }
 #header {
   margin: auto;
-  min-height: 100vh;
+  min-height: 20vh;
   width: 100%;
   position: relative;
   z-index: 5;

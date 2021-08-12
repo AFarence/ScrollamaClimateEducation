@@ -8,7 +8,7 @@ let lowTitleDiv = "<h5>Pennsylvania is the only one that lacks any mention of cl
 let bylineDiv = "<h4>By Sheridan Wall, Bianca Pallaro, Annie Njanja, and Adam Farence</h4>";
 
 let descriptionDiv =
-'“<p>Over the 35 years Dan Vandenburg has taught science at Springfield High School in Springfield, Pa., he has made a point to emphasize the importance of understanding climate change and its human impact.</p>”' +
+'<p>Over the 35 years Dan Vandenburg has taught science at Springfield High School in Springfield, Pa., he has made a point to emphasize the importance of understanding climate change and its human impact.</p>' +
 '<p>His favorite teaching material is a photo taken by a friend on the Bloomsburg Fairgrounds.</p>'
 
 let footerDiv =
@@ -17,7 +17,7 @@ let footerDiv =
 
 let divChapter0 =
 "<h3>Rising Tides</h3>" +
-'<p>The photo bears the history of flooding in Fairgrounds, which is  a few miles south of where he grew up. Captured in the image is a building with high water marks from four different floods, with the most recent line almost touching its roof. </p>' +
+'<p>The photo bears the history of flooding in the fairgrounds, which is a few miles south of where he grew up. Captured in the image is a building with high water marks from four different floods, with the most recent line almost touching its roof. </p>' +
 '<p>“I moved here when I was in first grade. I know Pennsylvania. And I\'ve seen the changes,” said Vandenburg, who has a master\'s degree in environmental science. “I tell the kids, ‘If you warm the atmosphere and you add more moisture, that water\'s going to come down eventually. And that\'s what you\'re seeing now in these floods.”</p>' +
 "<img src='images/floodLevels.png'>" +
 "<p class='imageCredit'>Courtesy Photo</p>";

@@ -340,7 +340,7 @@ var config = {
       ],
     },
     {
-      id: "satellite",
+      id: "noMapEnding",
       alignment: "full",
       hidden: false,
       title: "",

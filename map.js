@@ -274,6 +274,24 @@ for (var i = 0; i < layers.length; i++) {
         .addTo(map);
   });
 
+  map.on('click', 'penn_opinion', function (e) {
+    var countyName = e.features[0].properties.NAMELSAD;
+    var percentage = e.features[0].properties.Percentage;
+    new mapboxgl.Popup()
+        .setLngLat(e.lngLat)
+        .setHTML('<h4><b>' + countyName + '</b></h4>'
+        + '<p><b> % of adults who believe schools should teach about climate change: </b>' + percentage)
+        .addTo(map);
+});
+// Change the cursor to a pointer when the mouse is over the us_states_elections layer.
+map.on('mouseenter', 'penn_opinion', function () {
+    map.getCanvas().style.cursor = 'pointer';
+});
+// Change it back to a pointer when it leaves.
+map.on('mouseleave', 'penn_opinion', function () {
+    map.getCanvas().style.cursor = '';
+});
+
   // Change the cursor to a pointer when the mouse is over the us_states_elections layer.
   map.on('mouseenter', 'us_states_education', function () {
     map.getCanvas().style.cursor = 'pointer';

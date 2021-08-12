@@ -269,8 +269,8 @@ for (var i = 0; i < layers.length; i++) {
     new mapboxgl.Popup()
         .setLngLat(e.lngLat)
         .setHTML('<h4><b>'+stateName+'</b></h4>'
-        + '<h4>' + education +'</h4>'
-        + '<i><h4>' + ngss +'</h4></i>')
+        + '<p>' + education +'</p>'
+        + '<i><p>' + ngss +'</p></i>')
         .addTo(map);
   });
 
@@ -291,7 +291,7 @@ for (var i = 0; i < layers.length; i++) {
     },
     paint: {
       "fill-opacity": .5,
-      "fill-color": "gold",
+      "fill-color": "#FFFACD",
     },
   }, "waterway-shadow");
 
@@ -379,7 +379,7 @@ for (var i = 0; i < layers.length; i++) {
   map.on('click', 'bfg', function (e) {
     new mapboxgl.Popup()
         .setLngLat(e.lngLat)
-        .setHTML('<h2>' + 'Come high water' + '<br></h2><hr>' +  '<h4>' + 'The Bloomsburg Fairgrounds have seen progressively worse flooding over the past sevearl decades. Experts blame climate change.' + '</h4>')
+        .setHTML('<h2>' + 'Come high water' + '<br></h2><hr>' +  '<p>' + 'The Bloomsburg Fairgrounds have seen progressively worse flooding over the past sevearl decades. Experts blame climate change.' + '</p>')
         .addTo(map);
 });
 

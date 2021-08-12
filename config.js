@@ -124,20 +124,10 @@ var config = {
           opacity: 0,
           duration: 300,
         },
-        {
-          layer: "penn_opinion", // "overallMap"
-          opacity: 0,
-          duration: 300,
-        },
       ],
       onChapterExit: [
         {
           layer: "us_states_education", // "overallMap"
-          opacity: 0,
-          duration: 300,
-        },
-        {
-          layer: "penn_opinion", // "overallMap"
           opacity: 0,
           duration: 300,
         },
@@ -152,7 +142,7 @@ var config = {
         center: [-76.465, 40.987],
         zoom: 15.25,
         zoomSmall: 9,
-        pitch: 75,
+        pitch: 0,
         bearing: 0,
       },
       mapAnimation: "flyTo",
@@ -164,20 +154,10 @@ var config = {
           opacity: 0,
           duration: 300,
         },
-        {
-          layer: "penn_opinion",
-          opacity: 0,
-          duration: 300,
-        },
       ],
       onChapterExit: [
         {
           layer: "us_states_education",
-          opacity: 0,
-          duration: 300,
-        },
-        {
-          layer: "penn_opinion",
           opacity: 0,
           duration: 300,
         },
@@ -195,7 +175,7 @@ var config = {
         center: [-76.465, 40.987],
         zoom: 12.55,
         zoomSmall: 14,
-        pitch: 75,
+        pitch: 0,
         bearing: 0,
       },
       mapAnimation: "flyTo",
@@ -208,11 +188,6 @@ var config = {
           duration: 300,
         },
         {
-          layer: "penn_opinion",
-          opacity: 0,
-          duration: 300,
-        },
-        {
           layer: "bfg",
           opacity: 0,
           duration: 300,
@@ -222,11 +197,6 @@ var config = {
         {
           layer: "us_states_education",
           opacity: .6,
-          duration: 300,
-        },
-        {
-          layer: "penn_opinion",
-          opacity: 0,
           duration: 300,
         },
         {
@@ -248,8 +218,8 @@ var config = {
         center: [-95, 40.725],
         zoom: 3.5,
         zoomSmall: 14,
-        pitch: 40,
-        bearing: -9,
+        pitch: 0,
+        bearing: 0,
       },
       mapAnimation: "flyTo",
       rotateAnimation: false,
@@ -301,8 +271,8 @@ var config = {
         center: [-95, 22.725],
         zoom: 2.5,
         zoomSmall: 14,
-        pitch: 40,
-        bearing: -9,
+        pitch: 0,
+        bearing: 0,
       },
       mapAnimation: "flyTo",
       rotateAnimation: false,

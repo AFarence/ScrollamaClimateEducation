@@ -404,7 +404,7 @@ map.on('mouseleave', 'penn_opinion', function () {
   map.on('click', 'bfg', function (e) {
     popup
         .setLngLat(e.lngLat)
-        .setHTML('<h2>' + 'Come high water' + '<br></h2><hr>' +  '<p>' + 'The Bloomsburg Fairgrounds have seen progressively worse flooding over the past sevearl decades. Experts blame climate change.' + '</p>')
+        .setHTML('<h2>' + 'Come high water' + '<br></h2><hr>' +  '<p>' + 'The Bloomsburg Fairgrounds have seen progressively worse flooding over the past several decades. Experts blame climate change.' + '</p>')
         .addTo(map);
 });
 

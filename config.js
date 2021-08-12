@@ -101,7 +101,7 @@ var config = {
   subtitle: "",
   byline: bylineDiv,
   description: descriptionDiv,
-  footer: footerDiv,
+  footer: "",
   chapters: [
     {
       id: "xyz",
@@ -340,7 +340,7 @@ var config = {
       ],
     },
     {
-      id: "makingTheGrade",
+      id: "satellite",
       alignment: "full",
       hidden: false,
       title: "",
@@ -348,9 +348,9 @@ var config = {
       description: "",
       chapterDiv: divChapter3,
       location: {
-        center: [-0,0],
-        zoom: 10000,
-        zoomSmall: 00,
+        center: [-80,43.11],
+        zoom: 100,
+        zoomSmall: 9,
         pitch: 0,
         bearing: 0,
       },

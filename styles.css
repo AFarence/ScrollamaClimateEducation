@@ -101,6 +101,10 @@ body {
   max-height: 350px;
 }
 
+#satellite {
+  padding-bottom: 0;
+}
+
 a, a:hover, a:visited {
   color: #e96138;
 }

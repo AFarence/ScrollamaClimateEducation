@@ -242,24 +242,25 @@ for (var i = 0; i < layers.length; i++) {
     type: "fill",
     source: {
       type: "geojson",
-      data: "./data/stateData.geojson",
+      data: "data/stateData.geojson",
     },
     paint: {
       "fill-color": [
         "match",
         ["get", "Type_of_teaching"],
-        "Requires teaching human-caused climate change", "#fc8d59",
-        "Climate change only included in optional high school classes", "#ffffbf",
-        "Currently lacks any mention of climate change in their state science standards", "#91bfdb",
-        "Requires teaching climate change but not as predominantly human caused", "#91cf60",
+        "Requires teaching human-caused climate change", "#F3A650",
+        "Climate change only included in optional high school classes", "#7A203E",
+        "Currently lacks any mention of climate change in their state science standards", "#E0E0E0",
+        "Requires teaching climate change but not as predominantly human caused", "#DB5A2F",
         "#ffffff",
       ],
       "fill-outline-color": "#000000",
+      },
     },
-    },"road-simple"
+    "us_states_education_outline"
     );
   });
-
+  
   // Create the popup
   map.on('click', 'us_states_education', function (e) {
     var stateName = e.features[0].properties.NAME;
@@ -269,8 +270,7 @@ for (var i = 0; i < layers.length; i++) {
     new mapboxgl.Popup()
         .setLngLat(e.lngLat)
         .setHTML('<h4><b>'+stateName+'</b></h4>'
-        + '<p>' + education +'</p>'
-        + '<i><p>' + ngss +'</p></i>')
+        + '<h4>' + education +'</h4>')
         .addTo(map);
   });
 
